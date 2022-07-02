@@ -125,8 +125,8 @@ EJB의 비전은 “EJB는 애플리케이션 개발을 쉽게 만들어준다. 
     - **객체 지향 도메인 모델을 → 관계형 데이터베이스로 매핑하기 위한 프레임워크를 제공**한다.
 
 > 참고 자료
->-[https://yenny-zzang.tistory.com/67](https://yenny-zzang.tistory.com/67)
->- [https://velog.io/@corone_hi/엔터프라이즈-자바빈즈-EJB-Enterprise-Java-Beans](https://velog.io/@corone_hi/%EC%97%94%ED%84%B0%ED%94%84%EB%9D%BC%EC%9D%B4%EC%A6%88-%EC%9E%90%EB%B0%94%EB%B9%88%EC%A6%88-EJB-Enterprise-Java-Beans)
+>- [https://yenny-zzang.tistory.com/67](https://yenny-zzang.tistory.com/67)
+>- [https://velog.io/@corone_hi/엔터프라이즈-자바빈즈-EJB-Enterprise-Java-Beans]
 >- [https://velog.io/@mingggkeee/EJBEnterprise-Java-Bean](https://velog.io/@mingggkeee/EJBEnterprise-Java-Bean)
 >- [https://www.mindprod.com/jgloss/ejb.html](https://www.mindprod.com/jgloss/ejb.html)
 >
