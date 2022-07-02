@@ -31,3 +31,4 @@ System.out.println(s1.equls(s2));   //true
 System.out.println(s1.equls(s4));   //false
 System.out.println(s1.equalsIgnoreCase(s4)); //true
 ```
+
