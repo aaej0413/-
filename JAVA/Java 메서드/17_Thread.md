@@ -5,6 +5,28 @@
 - 이러한 샐행 방식을 멀티스레드(multithread)라고 하며,
 - 자바는 이러한 멀티 스레드를 지원한다.
 
+# main 스레드
+
+- 모든 자바 애플리케이션은 메인 스레드가 main()메소드를 시작하면서 시작된다.
+- 메인스레드는 main()메소드의 첫 코드부터 아래로 순차적으로 실행하고, main()의 마지막코드나 return문을 만나면 실행이 종료된다.
+- 메인 스레드는 필요에 따라 작업 스레드들을 만들어 병렬로 코드를 실행할 수 있다.
+(멀티 스레드를 생성하여 멀티 태스킹을 수행)
+
+![Untitled](https://s3.us-west-2.amazonaws.com/secure.notion-static.com/ea4b9942-4726-4baf-91b2-3f2d6386316b/Untitled.png?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Content-Sha256=UNSIGNED-PAYLOAD&X-Amz-Credential=AKIAT73L2G45EIPT3X45%2F20220703%2Fus-west-2%2Fs3%2Faws4_request&X-Amz-Date=20220703T032613Z&X-Amz-Expires=86400&X-Amz-Signature=b07892a5fd5016095ba51bba5335b66d992d519ec6db735d5e111ed37b439431&X-Amz-SignedHeaders=host&response-content-disposition=filename%20%3D%22Untitled.png%22&x-id=GetObject)
+
+# 작업 스레드
+
+멀티 스레드로 실행하는 애플리케이션을 개발하려면
+
+- 몇개의 작업을 병렬로 실행할지 결정하고
+- 각 작업별로 스레드를 생성
+
+해야 한다. 어떤 자바 애플리케이션이든 메인 스레드는 반드시 존재하므로, 메인 작업 외의 추가적인 작업의 수 만큼 스레드를 생성하면 된다.
+또한, 자바에서는 작업 스레드도 객체로 생성되기 때문에 클래스가 필요하다
+
+> 참고 : [https://velog.io/@sezzzini/Java-멀티-스레드](https://velog.io/@sezzzini/Java-%EB%A9%80%ED%8B%B0-%EC%8A%A4%EB%A0%88%EB%93%9C)
+
+
 # Thread 생성 방법
 
 1. 스레드 클래스를 직접 상속(extends)받는 방법
