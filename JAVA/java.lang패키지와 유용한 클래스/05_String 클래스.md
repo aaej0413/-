@@ -28,3 +28,4 @@ public final class String implements java.io.Serializable, Comparable {
 - 이처럼 덧셈연산자'+’를 사용해서 문자열을 결합하는 것은 매 연산 마다 새로운 문자열을 가진 String인스턴스가 생성되어 메모리 공간을 차지하게 되므로 가능한 한 결합횟수를 줄이는 것이 좋다.
 - **문자열 간의 결합이나 추출 등 문자열을 다루는 작업이 많이 필요한 경우**에는 **“StringBuffer클래스”를 사용**하는 것이 좋다.
 - StringBuffer인스턴스에 저장된 문자열은 변경이 가능하므로 하나의 StringBuffer인스턴스만으로도 문자열을 다룰 수 있다.
+
