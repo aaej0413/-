@@ -1,5 +1,5 @@
 # 04_예외의 발생과 catch블럭
-> catch블럭은 **괄호( )** 와 **블럭{ }** **두 부분으로 나눠**져 있는데,
+> catch블럭은 **괄호( )** 와 **블럭{ }** **두 부분으로 나눠**져 있는데,  
 괄호( )내에는 **처리하고자 하는. 예외와 같은 타입의 참조변수 하나를 선언**해야 한다.
 > 
 
@@ -60,8 +60,8 @@ public class Ex8_3 {
 }
 ```
 
-- ArithmeticException클래스는 Exception클래스의 자손이므로 ArithmeticException인스턴스와 
-Exception클래스와의 instanceof연산 결과가 true가 되어 Exception클래스 타입의 참조변수를 선언한
+- ArithmeticException클래스는 Exception클래스의 자손이므로 ArithmeticException인스턴스와   
+Exception클래스와의 instanceof연산 결과가 true가 되어 Exception클래스 타입의 참조변수를 선언한  
 catch블럭의 문장들이 수행된 것.
 
 **ex2)**
