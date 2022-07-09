@@ -70,7 +70,7 @@ person.sayHello();
 
 ![Untitled](https://s3.us-west-2.amazonaws.com/secure.notion-static.com/b058fac1-f229-46d8-9ca6-9e778d172ab9/Untitled.png?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Content-Sha256=UNSIGNED-PAYLOAD&X-Amz-Credential=AKIAT73L2G45EIPT3X45%2F20220709%2Fus-west-2%2Fs3%2Faws4_request&X-Amz-Date=20220709T141601Z&X-Amz-Expires=86400&X-Amz-Signature=f8b55a54074f3d3c5639142b32851b980f5046a563336157211f243a384a234d&X-Amz-SignedHeaders=host&response-content-disposition=filename%20%3D%22Untitled.png%22&x-id=GetObject)
 
-**참조**
+**참고 자료**
 
 > [https://www.oracle.com/technetwork/tutorials/tutorials-1876574.html](https://www.oracle.com/technetwork/tutorials/tutorials-1876574.html)
 > 
