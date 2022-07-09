@@ -52,3 +52,4 @@ false     // false일 것 같지만 true.
 - 문자열의 내용이 같은 str1과 str2에 대해 hashCode()를 호출하면 항상 동일한 해시코드 값을 얻는다.
 - 반면에 **System.identityHashCode(Object x)** 는 Object클래스의 hashCode메서드처럼 객체의 주소값으로 해시코드를 생성하기 때문에 **모든 객체가 항상 서로 다른 해시코드를 반환할 것을 보장**한다.
 - 그래서 str1과 str2가 해시코드는 같지만 서로 다른 객체라는 것을 알 수 있다.
+
