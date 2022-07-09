@@ -1,7 +1,7 @@
 # 06_멀티 catch블럭
-> JDK1.7부터 여러 catch블럭을 ‘|’ 기호를 이용하여 하나의 catch블럭으로 합칠 수 있게 되었으며,
-이를 ‘멀티 catch블럭’ 이라 한다.
-**’멀티 catch블럭’** 을 이용하면 **중복된 코드를 줄일 수 있다.**
+> JDK1.7부터 여러 catch블럭을 ‘|’ 기호를 이용하여 하나의 catch블럭으로 합칠 수 있게 되었으며,  
+이를 ‘멀티 catch블럭’ 이라 한다.  
+**’멀티 catch블럭’** 을 이용하면 **중복된 코드를 줄일 수 있다.**  
 그리고 **‘|’ 기호로 연결할 수 있는 예외 클래스의 개수에는 제한이 없다.**
 > 
 
@@ -30,7 +30,7 @@ try{
 ```java
 try {
     ...
-// } catch (**ParentException** | **ChildException e**) { // 에러 ‼️
+// } catch (ParentException | ChildException e) { // 에러 ‼️
 } catch (ParentException e) { // OK. 위의 라인과 의미상 동일
     e.printStackTrace();
 }
