@@ -108,3 +108,4 @@ kind : HEART, number : 10
 - Card2인스턴스의 toString()을 호출하면 인스턴스가 갖고 변수 kind와 number의 값을 문자열로 바꿔 반환하도록 오버라이딩 했다.
 - Object클래스에 정의된 toString()의 접근 제어자가 public이므로 Card2에서 정의된 toString()도 접근 제어자가 public이다.
 - 왜냐하면, 조상의 정의된 메서드를 자손에서 오버라이딩 할 때, 조상의 접근 제어자아 같거나 더 넓어야하기 때문이다.
+
