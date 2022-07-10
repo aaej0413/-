@@ -12,7 +12,7 @@
 (운영체제로부터 프로세서, 필요한 주소공간, 메모리 등의 자원을 할당 받음.)
 - 각 프로세스는 별도의 주소 공간에서 실행되며, 한 프로세스는 다른 프로세스의 변수나 자료구조에 접근❌
 
-![Untitled](https://s3.us-west-2.amazonaws.com/secure.notion-static.com/18da5ccb-f86e-4407-bd4c-4e06425d3d28/Untitled.png?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Content-Sha256=UNSIGNED-PAYLOAD&X-Amz-Credential=AKIAT73L2G45EIPT3X45%2F20220703%2Fus-west-2%2Fs3%2Faws4_request&X-Amz-Date=20220703T032916Z&X-Amz-Expires=86400&X-Amz-Signature=2ac5d2fdc1543bec1de044d2ccb7ba9177354a21f5954f5cba7a24b5000e4702&X-Amz-SignedHeaders=host&response-content-disposition=filename%20%3D%22Untitled.png%22&x-id=GetObject)
+![Untitled](https://s3.us-west-2.amazonaws.com/secure.notion-static.com/18da5ccb-f86e-4407-bd4c-4e06425d3d28/Untitled.png?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Content-Sha256=UNSIGNED-PAYLOAD&X-Amz-Credential=AKIAT73L2G45EIPT3X45%2F20220710%2Fus-west-2%2Fs3%2Faws4_request&X-Amz-Date=20220710T023515Z&X-Amz-Expires=86400&X-Amz-Signature=255d69ecc6b31eeb3993b2e42b058340f0ee7f9ae536add11410f8adfa76d1af&X-Amz-SignedHeaders=host&response-content-disposition=filename%20%3D%22Untitled.png%22&x-id=GetObject)
 
 1. **코드(Code) 영역 :** 
     
@@ -57,7 +57,7 @@
 - 멀티 프로세스는 애플리케이션 단위의 멀티 태스킹.
 - 멀티 스레드는 애플리케이션 내부에서의 멀티 태스킹.
 
-![Untitled](https://s3.us-west-2.amazonaws.com/secure.notion-static.com/a8259fd3-e48d-402c-bfd6-64df27015fc8/Untitled.png?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Content-Sha256=UNSIGNED-PAYLOAD&X-Amz-Credential=AKIAT73L2G45EIPT3X45%2F20220703%2Fus-west-2%2Fs3%2Faws4_request&X-Amz-Date=20220703T032940Z&X-Amz-Expires=86400&X-Amz-Signature=08b52aeb69ed11c17f2fab4be0b92df93451a81d043f8091cffe178fe9e4bcc7&X-Amz-SignedHeaders=host&response-content-disposition=filename%20%3D%22Untitled.png%22&x-id=GetObject)
+![Untitled](https://s3.us-west-2.amazonaws.com/secure.notion-static.com/a8259fd3-e48d-402c-bfd6-64df27015fc8/Untitled.png?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Content-Sha256=UNSIGNED-PAYLOAD&X-Amz-Credential=AKIAT73L2G45EIPT3X45%2F20220710%2Fus-west-2%2Fs3%2Faws4_request&X-Amz-Date=20220710T023558Z&X-Amz-Expires=86400&X-Amz-Signature=257953be80cf202dd4323768f80135f4d589c88cbdadcf09f6d839ec2437a104&X-Amz-SignedHeaders=host&response-content-disposition=filename%20%3D%22Untitled.png%22&x-id=GetObject)
 
 ### 1_2. PCB(Process Control Block)
 
@@ -93,7 +93,7 @@
 - 이러한 샐행 방식을 멀티스레드(multithread)라고 하며,
 - 자바는 이러한 멀티 스레드를 지원한다.
 
-![Untitled](https://s3.us-west-2.amazonaws.com/secure.notion-static.com/6f078dec-e814-4f5e-af4f-f73e6442545f/Untitled.png?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Content-Sha256=UNSIGNED-PAYLOAD&X-Amz-Credential=AKIAT73L2G45EIPT3X45%2F20220703%2Fus-west-2%2Fs3%2Faws4_request&X-Amz-Date=20220703T032952Z&X-Amz-Expires=86400&X-Amz-Signature=89d3ce86b9de00f201bf2c0c6993e4561f057be00c5e7e7cd219e72a37db81c6&X-Amz-SignedHeaders=host&response-content-disposition=filename%20%3D%22Untitled.png%22&x-id=GetObject)
+![Untitled](https://s3.us-west-2.amazonaws.com/secure.notion-static.com/6f078dec-e814-4f5e-af4f-f73e6442545f/Untitled.png?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Content-Sha256=UNSIGNED-PAYLOAD&X-Amz-Credential=AKIAT73L2G45EIPT3X45%2F20220710%2Fus-west-2%2Fs3%2Faws4_request&X-Amz-Date=20220710T023618Z&X-Amz-Expires=86400&X-Amz-Signature=2b1f0351ea61e441e61c62b6ef6d48d28a4e843846f6aa460bfb484d5eb09886&X-Amz-SignedHeaders=host&response-content-disposition=filename%20%3D%22Untitled.png%22&x-id=GetObject)
 
 ### 2_1. 멀티 스레드
 
