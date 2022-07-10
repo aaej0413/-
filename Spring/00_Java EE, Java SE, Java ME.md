@@ -52,5 +52,5 @@
 - 하드웨어 수준에서 가속 기능을 사용할 수 있는 그래픽과 미디어 엔진을 갖추고 있어 클라이언트의 성능에 신경을 써야하는 분야에서 사용됨.
 - Java EE 처럼 클라이언트 역할을 하기도 함.
 
-> 출처 : [https://doozi316.github.io/java/2020/07/01/WEB20/](https://doozi316.github.io/java/2020/07/01/WEB20/)
+> 참고 : [https://doozi316.github.io/java/2020/07/01/WEB20/](https://doozi316.github.io/java/2020/07/01/WEB20/)
 >
