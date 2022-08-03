@@ -10,8 +10,19 @@
 💥 Collection인터페이스로부터 상속받은 것들은 제외.
 > 
 
-
-![스크린샷 2022-07-23 오후 9.30.01.png](https://s3.us-west-2.amazonaws.com/secure.notion-static.com/f4784e64-569c-43be-a6f6-7744a8b0f79c/%E1%84%89%E1%85%B3%E1%84%8F%E1%85%B3%E1%84%85%E1%85%B5%E1%86%AB%E1%84%89%E1%85%A3%E1%86%BA_2022-07-23_%E1%84%8B%E1%85%A9%E1%84%92%E1%85%AE_9.30.01.png?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Content-Sha256=UNSIGNED-PAYLOAD&X-Amz-Credential=AKIAT73L2G45EIPT3X45%2F20220723%2Fus-west-2%2Fs3%2Faws4_request&X-Amz-Date=20220723T123300Z&X-Amz-Expires=86400&X-Amz-Signature=42646b0af0147ac5d3230eca96991173301ba7796e91be281b38f8022a04fafd&X-Amz-SignedHeaders=host&response-content-disposition=filename%20%3D%22%25E1%2584%2589%25E1%2585%25B3%25E1%2584%258F%25E1%2585%25B3%25E1%2584%2585%25E1%2585%25B5%25E1%2586%25AB%25E1%2584%2589%25E1%2585%25A3%25E1%2586%25BA%25202022-07-23%2520%25E1%2584%258B%25E1%2585%25A9%25E1%2584%2592%25E1%2585%25AE%25209.30.01.png%22&x-id=GetObject)
+| 메서드 | 설명 |
+| --- | --- |
+| void add (int index, Object element) | 지정된 위치 (index)에 객채(element) 또는 컬렉션에 포함된 객채들을 추가한다. |
+boolean addAll (int index, Collection c) 
+| Object get (int index) | 지정된 위치(index)에 있는 객체를 반환한다. |
+| int indexOf (Object o) | 지정된 객체의 위치(index)를 반환한다.(List의 첫 번째 요소부터 순방향으로 찾는다.) |
+| int lastIndexOf (Object o) | 지정된 객체의 위치(index)를 반환한다.(List의 마지막 요소부터 역방향으로 찾는다.) |
+| ListIterator listIterator( ) | List의 객체에 접근할 수 있는 ListIterator를 반환한다. |
+ListIterator listIterator(int index) 
+| Object remove (int index) | 지정된 위치(index)에 있는 객체를 삭제하고 삭제된 객체를 반환한다. |
+| Object set (int index, Object element) | 지정된 위치(index)에 객체(element)를 저장한다. |
+| void sort (Comparator c) | 지정된 비교자(comparator)로 List를 정렬한다. |
+| List subList (int fromindex, int toindex) | 지정된 범위(fromIndex 부터 toIndex)에 있는 객체를 반환한다. |
 
 # 2. Set 인터페이스
 
@@ -19,7 +30,7 @@
 Set인터페이스를 구현한 클래스로는 **HashSet, TreeSet** 등이 있다.
 > 
 
-![스크린샷 2022-07-23 오후 8.23.23.png](https://s3.us-west-2.amazonaws.com/secure.notion-static.com/21eba121-be56-43ac-a20f-d00cb261644d/%E1%84%89%E1%85%B3%E1%84%8F%E1%85%B3%E1%84%85%E1%85%B5%E1%86%AB%E1%84%89%E1%85%A3%E1%86%BA_2022-07-23_%E1%84%8B%E1%85%A9%E1%84%92%E1%85%AE_8.23.23.png?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Content-Sha256=UNSIGNED-PAYLOAD&X-Amz-Credential=AKIAT73L2G45EIPT3X45%2F20220723%2Fus-west-2%2Fs3%2Faws4_request&X-Amz-Date=20220723T123400Z&X-Amz-Expires=86400&X-Amz-Signature=e53983b07c9b555a75e587a9eeb19407107075c4d7a18df6ba62bf88dbbad101&X-Amz-SignedHeaders=host&response-content-disposition=filename%20%3D%22%25E1%2584%2589%25E1%2585%25B3%25E1%2584%258F%25E1%2585%25B3%25E1%2584%2585%25E1%2585%25B5%25E1%2586%25AB%25E1%2584%2589%25E1%2585%25A3%25E1%2586%25BA%25202022-07-23%2520%25E1%2584%258B%25E1%2585%25A9%25E1%2584%2592%25E1%2585%25AE%25208.23.23.png%22&x-id=GetObject)
+![스크린샷 2022-07-23 오후 8.23.23.png](https://s3.us-west-2.amazonaws.com/secure.notion-static.com/21eba121-be56-43ac-a20f-d00cb261644d/%E1%84%89%E1%85%B3%E1%84%8F%E1%85%B3%E1%84%85%E1%85%B5%E1%86%AB%E1%84%89%E1%85%A3%E1%86%BA_2022-07-23_%E1%84%8B%E1%85%A9%E1%84%92%E1%85%AE_8.23.23.png?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Content-Sha256=UNSIGNED-PAYLOAD&X-Amz-Credential=AKIAT73L2G45EIPT3X45%2F20220803%2Fus-west-2%2Fs3%2Faws4_request&X-Amz-Date=20220803T070501Z&X-Amz-Expires=86400&X-Amz-Signature=4168ac59326b875319f676ec4206eece2fe0d9597bceaca48e623cc5fa2dab4d&X-Amz-SignedHeaders=host&response-content-disposition=filename%20%3D%22%25E1%2584%2589%25E1%2585%25B3%25E1%2584%258F%25E1%2585%25B3%25E1%2584%2585%25E1%2585%25B5%25E1%2586%25AB%25E1%2584%2589%25E1%2585%25A3%25E1%2586%25BA%25202022-07-23%2520%25E1%2584%258B%25E1%2585%25A9%25E1%2584%2592%25E1%2585%25AE%25208.23.23.png%22&x-id=GetObject)
 
 > Set인터페이스에는 다음과 같은 메서드들이 있는데,   
 ***모두 Collection인터페이스로부터 상속받은 것들***이다.
