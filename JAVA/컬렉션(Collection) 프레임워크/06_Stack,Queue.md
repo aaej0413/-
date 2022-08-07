@@ -1,2 +1,2 @@
 # Stack,Queue
-## 스택 Stack
+## 1. 스택 Stack
