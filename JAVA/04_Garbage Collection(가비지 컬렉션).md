@@ -34,8 +34,7 @@ person.sayHello();
 - 위의 코드를 수행하면서 두 개의 객체가 생성된다.
 - “Dave”라는 이름의 Person 객체와 “Eric”이라는 이름의 Person 객체가 실행되는 도중에 생성된다.
 - ***생성된 객체*** 는 ***person 변수의 의해 참조*** 된다.
-
-![스크린샷 2022-07-09 오후 10.47.37.png](https://s3.us-west-2.amazonaws.com/secure.notion-static.com/85201ad9-60a7-41f7-a422-4f6b368f5b4c/%E1%84%89%E1%85%B3%E1%84%8F%E1%85%B3%E1%84%85%E1%85%B5%E1%86%AB%E1%84%89%E1%85%A3%E1%86%BA_2022-07-09_%E1%84%8B%E1%85%A9%E1%84%92%E1%85%AE_10.47.37.png?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Content-Sha256=UNSIGNED-PAYLOAD&X-Amz-Credential=AKIAT73L2G45EIPT3X45%2F20220709%2Fus-west-2%2Fs3%2Faws4_request&X-Amz-Date=20220709T141510Z&X-Amz-Expires=86400&X-Amz-Signature=5d8badccb10ad7823261a327cf0f260264a91d8ad5982e911b59ae23ae5f1a53&X-Amz-SignedHeaders=host&response-content-disposition=filename%20%3D%22%25E1%2584%2589%25E1%2585%25B3%25E1%2584%258F%25E1%2585%25B3%25E1%2584%2585%25E1%2585%25B5%25E1%2586%25AB%25E1%2584%2589%25E1%2585%25A3%25E1%2586%25BA%25202022-07-09%2520%25E1%2584%258B%25E1%2585%25A9%25E1%2584%2592%25E1%2585%25AE%252010.47.37.png%22&x-id=GetObject)
+![image](https://user-images.githubusercontent.com/106788504/198931582-1aea422e-cc81-4fa4-ae18-41abf4a4e811.png)
 
 - 그림을 그려보면,
     1. “Dave” 객체가 생성된 이후 person 변수에 의해 참조 된다. 이 때는 가비지가 없다.
@@ -52,7 +51,8 @@ person.sayHello();
 
 - 이 단계에서는 가비지 컬렉터가 사용중인 메모리와 사용하지 않는 메모리 조각을 식별한다.
 
-![Untitled](https://s3.us-west-2.amazonaws.com/secure.notion-static.com/9eb8661f-788f-4900-b07c-39f79911abc9/Untitled.png?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Content-Sha256=UNSIGNED-PAYLOAD&X-Amz-Credential=AKIAT73L2G45EIPT3X45%2F20220709%2Fus-west-2%2Fs3%2Faws4_request&X-Amz-Date=20220709T141533Z&X-Amz-Expires=86400&X-Amz-Signature=530ce145d4a7fe06fe648c32f6afaeca615768518089ffc5ffe937cb02c815da&X-Amz-SignedHeaders=host&response-content-disposition=filename%20%3D%22Untitled.png%22&x-id=GetObject)
+![image](https://user-images.githubusercontent.com/106788504/198931623-532bc665-7bfe-4563-b835-7209503a8703.png)
+
 
 - 참조된 객체는 파란색으로 표시되고, 참조되지 않은 객체는 금색으로 표시된다.
 - 참조 여부를 판단하기 위해서는 마킹 단계에서 모든 객체를 스캔해야 하는데,
@@ -61,14 +61,16 @@ person.sayHello();
 ### Step 2 : Normal Deletion 일반 삭제
 
 - 일반 삭제는 참조되지 않은 객체를 제거하여 참조된 객체와 포인터를 여유 공간으로 남긴다.
+![image](https://user-images.githubusercontent.com/106788504/198931647-b4933fbe-b64f-445b-ac02-880e3f073ee8.png)
 
-![Untitled](https://s3.us-west-2.amazonaws.com/secure.notion-static.com/b7b64c9d-0578-495d-923e-0da7399e284e/Untitled.png?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Content-Sha256=UNSIGNED-PAYLOAD&X-Amz-Credential=AKIAT73L2G45EIPT3X45%2F20220709%2Fus-west-2%2Fs3%2Faws4_request&X-Amz-Date=20220709T141547Z&X-Amz-Expires=86400&X-Amz-Signature=5b0c4d0d8448bfd74384759ec775deb4be744fd817ff38c3975f50a9c11d2bac&X-Amz-SignedHeaders=host&response-content-disposition=filename%20%3D%22Untitled.png%22&x-id=GetObject)
 
 - 메모리 할당자는 새 객체를 할당할 수 있도록 참조 여유 공간을 잡는다.
 - 성능을 향상시키기 위해 참조되지 않은 객체를 삭제하는 것 외에도 참조된 나머지 객체를 압축할 수도 있다.
 - 참조된 객체를 함께 이동하면 새 메모리 할당이 훨씬 쉽고 빨라진다.
 
-![Untitled](https://s3.us-west-2.amazonaws.com/secure.notion-static.com/b058fac1-f229-46d8-9ca6-9e778d172ab9/Untitled.png?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Content-Sha256=UNSIGNED-PAYLOAD&X-Amz-Credential=AKIAT73L2G45EIPT3X45%2F20220709%2Fus-west-2%2Fs3%2Faws4_request&X-Amz-Date=20220709T141601Z&X-Amz-Expires=86400&X-Amz-Signature=f8b55a54074f3d3c5639142b32851b980f5046a563336157211f243a384a234d&X-Amz-SignedHeaders=host&response-content-disposition=filename%20%3D%22Untitled.png%22&x-id=GetObject)
+![image](https://user-images.githubusercontent.com/106788504/198931688-9613e970-54fa-4328-8f63-bdb87d9da48e.png)
+
+
 
 **참고 자료**
 
