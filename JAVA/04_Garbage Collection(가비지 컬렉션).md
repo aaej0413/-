@@ -70,12 +70,9 @@ person.sayHello();
 
 ![image](https://user-images.githubusercontent.com/106788504/198931688-9613e970-54fa-4328-8f63-bdb87d9da48e.png)
 
-
-
 **참고 자료**
 
 > [https://www.oracle.com/technetwork/tutorials/tutorials-1876574.html](https://www.oracle.com/technetwork/tutorials/tutorials-1876574.html)
-> 
 > 
 > [https://www.oracle.com/webfolder/technetwork/tutorials/obe/java/gc01/index.html](https://www.oracle.com/webfolder/technetwork/tutorials/obe/java/gc01/index.html)
 >
