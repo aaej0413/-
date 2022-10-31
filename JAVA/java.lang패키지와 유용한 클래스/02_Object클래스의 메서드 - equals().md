@@ -48,7 +48,7 @@ v1과 v2는 다릅니다.
 
 - equals메서드는 주소값으로 비교를 하기 때문에, 두 Value인스턴스의 멤버변수 value의 값이 10으로 같아도 결과는 false이다.
     
-    ![스크린샷 2022-07-08 오전 9.50.45.png](https://s3.us-west-2.amazonaws.com/secure.notion-static.com/642eedcb-2cb2-4cdf-b7e1-96e7b3f9de72/%E1%84%89%E1%85%B3%E1%84%8F%E1%85%B3%E1%84%85%E1%85%B5%E1%86%AB%E1%84%89%E1%85%A3%E1%86%BA_2022-07-08_%E1%84%8B%E1%85%A9%E1%84%8C%E1%85%A5%E1%86%AB_9.50.45.png?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Content-Sha256=UNSIGNED-PAYLOAD&X-Amz-Credential=AKIAT73L2G45EIPT3X45%2F20220709%2Fus-west-2%2Fs3%2Faws4_request&X-Amz-Date=20220709T095125Z&X-Amz-Expires=86400&X-Amz-Signature=dc1af324ae9078cbe1b63a37ab59b380f694fa946d2eb600216f681a7adb173b&X-Amz-SignedHeaders=host&response-content-disposition=filename%20%3D%22%25E1%2584%2589%25E1%2585%25B3%25E1%2584%258F%25E1%2585%25B3%25E1%2584%2585%25E1%2585%25B5%25E1%2586%25AB%25E1%2584%2589%25E1%2585%25A3%25E1%2586%25BA%25202022-07-08%2520%25E1%2584%258B%25E1%2585%25A9%25E1%2584%258C%25E1%2585%25A5%25E1%2586%25AB%25209.50.45.png%22&x-id=GetObject)
+![image](https://user-images.githubusercontent.com/106788504/198930753-bf2bf563-9873-42d3-a023-ef4f6556b6b6.png)
     
 
 # equals( )의 오버라이딩
@@ -104,5 +104,4 @@ p1과 p2는 같은 사람입니다.
 - equals메서드가 Person인스턴스의 주소값이 아닌 멤버변수 id의 값을 비교하도록 하기 위해 equals메서드를 오버라이딩 했다.
 - 이렇게 함으로써 서로 다른 인스턴스일지라도 같은 id를 가지고 있다면 equals메서드로 비교했을 때 true를 얻게 할 수 있다.
     
-    ![스크린샷 2022-07-08 오전 10.28.30.png](https://s3.us-west-2.amazonaws.com/secure.notion-static.com/f252f116-407f-4bae-83bd-4ebbd075e9f5/%E1%84%89%E1%85%B3%E1%84%8F%E1%85%B3%E1%84%85%E1%85%B5%E1%86%AB%E1%84%89%E1%85%A3%E1%86%BA_2022-07-08_%E1%84%8B%E1%85%A9%E1%84%8C%E1%85%A5%E1%86%AB_10.28.30.png?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Content-Sha256=UNSIGNED-PAYLOAD&X-Amz-Credential=AKIAT73L2G45EIPT3X45%2F20220709%2Fus-west-2%2Fs3%2Faws4_request&X-Amz-Date=20220709T095152Z&X-Amz-Expires=86400&X-Amz-Signature=3b8f87fe6d159b23fbd1f4af046f91a54a1088064fe165e8a22f8ce07a474f8b&X-Amz-SignedHeaders=host&response-content-disposition=filename%20%3D%22%25E1%2584%2589%25E1%2585%25B3%25E1%2584%258F%25E1%2585%25B3%25E1%2584%2585%25E1%2585%25B5%25E1%2586%25AB%25E1%2584%2589%25E1%2585%25A3%25E1%2586%25BA%25202022-07-08%2520%25E1%2584%258B%25E1%2585%25A9%25E1%2584%258C%25E1%2585%25A5%25E1%2586%25AB%252010.28.30.png%22&x-id=GetObject)
-
+![image](https://user-images.githubusercontent.com/106788504/198930788-6d84797c-2bd0-4c2d-b0c7-69244e8b5163.png)
